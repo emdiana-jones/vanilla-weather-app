@@ -37,6 +37,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "862505b1b6aac4d71786143d27378ed5";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=boulder&appid=${apiKey}&units=imperial`;
+let city = "Durango";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 axios.get(apiUrl).then(displayTemperature);
